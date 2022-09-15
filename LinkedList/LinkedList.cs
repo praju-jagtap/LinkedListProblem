@@ -108,6 +108,19 @@ namespace LinkedList
                 temp.next = node;
             }
         }
+        public Node Pop()                                   // Pop Method - To Delete First Element 
+        {
+            Node node = head;
+            if (head == null)
+            {
+                Console.WriteLine("Linked List is Empty");
+            }
+            else
+            {
+                head = head.next;
+            }
+            return node;
+        }
         internal void Display()                            // Display Method - To Display Content in Output
         {
             Node temp = this.head;
