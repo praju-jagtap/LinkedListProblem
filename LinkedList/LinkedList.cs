@@ -41,6 +41,23 @@ namespace LinkedList
                 head.next = temp;
             }
         }
+        public void Append(int data)                    
+        {
+            Node node = new Node(data);
+            if (head == null)
+            {
+                head = node;
+            }
+            else
+            {
+                Node node1 = head;
+                while (node1.next != null)
+                {
+                    node1 = node1.next;
+                }
+                node1.next = node;
+            }
+        }
         internal void Display()                            // Display Method - To Display Content in Output
         {
             Node temp = this.head;
