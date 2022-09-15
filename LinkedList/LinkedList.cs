@@ -84,6 +84,30 @@ namespace LinkedList
             prev.next = newestNode;
             return this.head;
         }
+        internal void InsertAtFirstPosition(int position, int data)            // Insert Element At First Position
+        {
+            Node node = new Node(data);
+            if (position < 1)
+            {
+                Console.WriteLine("Invalid Choice");
+            }
+            else if (position == 1)
+            {
+                node.next = head;
+                head = node;
+            }
+            else
+            {
+                Node temp = head;
+                while (position > 2)
+                {
+                    temp = temp.next;
+                    position--;
+                }
+                node.next = temp.next;
+                temp.next = node;
+            }
+        }
         internal void Display()                            // Display Method - To Display Content in Output
         {
             Node temp = this.head;
