@@ -139,6 +139,27 @@ namespace LinkedList
                 return n;
             }
         }
+        public int Search(int data)                         // Search Method - To Found Data In Linked List Or Not
+        {
+            int count = 0;
+            Node temp = head;
+            if (this.head == null)
+            {
+                Console.WriteLine("Element Not Found");
+                return 0;
+            }
+            while (temp != null)
+            {
+                if (temp.data == data)
+                {
+                    Console.WriteLine("Element Found Sucessfully the Linked List Is");
+                    return count;
+                }
+                temp = temp.next;
+                count++;
+            }
+            return 0;
+        }
         internal void Display()                            // Display Method - To Display Content in Output
         {
             Node temp = this.head;
