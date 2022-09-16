@@ -8,7 +8,7 @@
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("1.Create LinkedList\n2.To Print Add Elements In Reverse Order\n3.Append Element In Linked List\n4.Insert Element At Particular Position\n5.Insert Element At First Position\n6.Delete First Element In Linked List\n7.Delete Last Element In Linked List\n8.To Search Element In Linked List\n");
+                Console.WriteLine("1.Create LinkedList\n2.To Print Add Elements In Reverse Order\n3.Append Element In Linked List\n4.Insert Element At Particular Position\n5.Insert Element At First Position\n6.Delete First Element In Linked List\n7.Delete Last Element In Linked List\n8.To Search Element In Linked List\n9.Size Of Linked List\n");
                 Console.WriteLine("Select Your Choice: ");
                 Console.WriteLine("----------------------------------\n");
                 int option = Convert.ToInt32(Console.ReadLine());
@@ -69,6 +69,11 @@
                         Console.WriteLine("----------------------------------\n");
                         list.Search(30);
                         list.Display();
+                        Console.WriteLine("----------------------------------\n");
+                        break;
+                    case 9:
+                        Console.WriteLine("----------------------------------\n");
+                        list.Size();
                         Console.WriteLine("----------------------------------\n");
                         break;
 

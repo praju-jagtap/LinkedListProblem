@@ -160,6 +160,24 @@ namespace LinkedList
             }
             return 0;
         }
+        internal void Size()                              // Size Method - To Print the Size Of Linked List
+        {
+            int count = 0;
+            Node temp = this.head;
+            if (temp == null)
+            {
+                Console.WriteLine("Linked List is empty");
+                return;
+            }
+            while (temp != null)
+            {
+                Console.Write(temp.data + " ");
+                temp = temp.next;
+                count++;
+            }
+            Console.WriteLine("\nSize of Linked List is:-" + " " + count);
+
+        }
         internal void Display()                            // Display Method - To Display Content in Output
         {
             Node temp = this.head;
